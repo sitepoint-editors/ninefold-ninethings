@@ -1,3 +1,7 @@
+before_script:
+  - psql -c "DROP DATABASE IF EXISTS ninethings-test;" -U postgres
+  - psql -c 'create database ninethings-test;' -U postgres
+
 deploy:
   provider: ninefold
   app_id: '10906'
@@ -5,6 +9,3 @@ deploy:
     secure: sKwP2N3lHQTTMlhqbv12+zHjmD3U766qG+FJgT0xbPefXCu0Abssaj+eMITk09duh9U3uvUOvZw6Osq5Gvr/42i2ZvN5tkhMw7to2YLh6eDrKSxOa6MqWw0PkLQtWLdhS7H8iN5+iUz8PubZgIanenrtK/+8RdsQbAtbuHKviyM=
   on:
     repo: sitepoint-examples/ninefold-ninethings
-
-before_script:
-  - psql -c 'create database ninethings-test;' -U postgres
