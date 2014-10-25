@@ -1,6 +1,6 @@
 before_script:
-  - psql -c "DROP DATABASE IF EXISTS ninethings-test;" -U postgres
-  - psql -c 'create database ninethings-test;' -U postgres
+  - psql -c "DROP DATABASE IF EXISTS ninethings_test;" -U postgres
+  - psql -c 'create database ninethings_test;' -U postgres
 
 deploy:
   provider: ninefold
