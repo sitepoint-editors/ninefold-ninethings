@@ -1,0 +1,25 @@
+<%= form_for(@nine_thing) do |f| %>
+  <% if @nine_thing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nine_thing.errors.count, "error") %> prohibited this nine_thing from being saved:</h2>
+
+      <ul>
+      <% @nine_thing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :nine_number %><br>
+    <%= f.number_field :nine_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

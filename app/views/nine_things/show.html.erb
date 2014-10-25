@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @nine_thing.name %>
+</p>
+
+<p>
+  <strong>Nine number:</strong>
+  <%= @nine_thing.nine_number %>
+</p>
+
+<%= link_to 'Edit', edit_nine_thing_path(@nine_thing) %> |
+<%= link_to 'Back', nine_things_path %>
