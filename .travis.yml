@@ -1,12 +1,11 @@
 before_script:
-  - psql -c "DROP DATABASE IF EXISTS ninethings_test;" -U postgres
-  - psql -c 'create database ninethings_test;' -U postgres
-
+- psql -c "DROP DATABASE IF EXISTS ninethings_test;" -U postgres
+- psql -c 'create database ninethings_test;' -U postgres
 deploy:
   provider: ninefold
   app_id: '10906'
   skip_cleanup: true
   auth_token:
-    secure: sKwP2N3lHQTTMlhqbv12+zHjmD3U766qG+FJgT0xbPefXCu0Abssaj+eMITk09duh9U3uvUOvZw6Osq5Gvr/42i2ZvN5tkhMw7to2YLh6eDrKSxOa6MqWw0PkLQtWLdhS7H8iN5+iUz8PubZgIanenrtK/+8RdsQbAtbuHKviyM=
+    secure: BCm6bVvIy2dvNDhSVjNOfJRXyYYRoyRZTWf0+PcTrl5ufJa4WaNtSyyp0rL908iWoWaPZ6ohoiu+lHK+A7+bzMWEtkjUNIyfQK50a2cAQ9C+k96jOZpLs2BFLRzl8MZ6iNft3Mf548dLMslpQzDHw6xKOMQU0dkvHXCL7tQB5b4=
   on:
     branch: staging
