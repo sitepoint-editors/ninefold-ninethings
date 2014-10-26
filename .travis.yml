@@ -7,5 +7,3 @@ deploy:
   skip_cleanup: true
   auth_token:
     secure: BCm6bVvIy2dvNDhSVjNOfJRXyYYRoyRZTWf0+PcTrl5ufJa4WaNtSyyp0rL908iWoWaPZ6ohoiu+lHK+A7+bzMWEtkjUNIyfQK50a2cAQ9C+k96jOZpLs2BFLRzl8MZ6iNft3Mf548dLMslpQzDHw6xKOMQU0dkvHXCL7tQB5b4=
-  on:
-    branch: staging
