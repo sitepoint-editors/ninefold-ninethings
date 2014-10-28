@@ -1,11 +1,6 @@
-deploy:
-  provider: ninefold
-  auth-token: "PqVXvVMWqHR6XF4UqZFqvoZwEpMlXcO_SkoCl6NPinmJ8KT1uMkl7ws_lihOoAk2iQ5rpfqF-mRRWHozuKp_yA"
-  app-id: "10906"
-  edge: true
-  skip_cleanup: true
-
 before_script:
 - psql -c "DROP DATABASE IF EXISTS ninethings_test;" -U postgres
 - psql -c 'create database ninethings_test;' -U postgres
+
+after_success: - gem install ninefold - AUTH_TOKEN=$AUTH_TOKEN APP_ID=$APP_ID ninefold app redeploy --robot --sure
 
