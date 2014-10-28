@@ -1,4 +1,4 @@
 before_script:
 - psql -c "DROP DATABASE IF EXISTS ninethings_test;" -U postgres
 - psql -c 'create database ninethings_test;' -U postgres
-after_success: curl -X POST -d "https://portal.ninefold.com/api/v1/apps/10906/deployments?auth_token=PqVXvVMWqHR6XF4UqZFqvoZwEpMlXcO_SkoCl6NPinmJ8KT1uMkl7ws_lihOoAk2iQ5rpfqF-mRRWHozuKp_yA"
+after_success: curl -X POST -d "" https://portal.ninefold.com/api/v1/apps/10906/deployments?auth_token=7gZ-6uYw19ftJdkH1E_Udg
