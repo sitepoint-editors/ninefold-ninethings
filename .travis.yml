@@ -1,7 +1,7 @@
 deploy:
   provider: ninefold
-  auth-token: "PqVXvVMWqHR6XF4UqZFqvoZwEpMlXcO_SkoCl6NPinmJ8KT1uMkl7ws_lihOoAk2iQ5rpfqF-mRRWHozuKp_yA"
-  app-id: "10906"
+  auth_token: "PqVXvVMWqHR6XF4UqZFqvoZwEpMlXcO_SkoCl6NPinmJ8KT1uMkl7ws_lihOoAk2iQ5rpfqF-mRRWHozuKp_yA"
+  app_id: "10906"
   edge: true
   skip_cleanup: true
 
